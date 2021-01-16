@@ -1,0 +1,35 @@
+.sobreMi{
+
+    .sobreMi__contenedor{
+        justify-items: center;
+        row-gap: 2rem;
+        text-align: center;
+        color: $color_gris;
+
+        .sobreMi__img{
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: $color_principal;
+            overflow: hidden;
+
+            img{
+                width: 100px;
+            }
+        }
+
+        .sobreMi__subTitulo{
+            font-size: $fuente_tamanoh2;
+            color: $color_principal;
+            margin-top: 2rem;
+        }
+
+        .sobreMi__texto{
+            font-size: $fuente_tamanoChico;
+            margin: 2rem 0;
+        }
+    }
+}

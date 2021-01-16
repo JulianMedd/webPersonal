@@ -1,0 +1,32 @@
+.seccion{
+    padding: 3rem 0;
+}
+
+.seccion-titulo{
+    position: relative;
+    font-size: $fuente_tamanoh2;
+    color: $color_oscuro;
+    margin-top: $mb-4 0;
+    text-align: center;
+    border-bottom: 4px $color_principal solid;
+}
+
+.seccion::after{
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: .18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: $color_principal;
+}
+
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}

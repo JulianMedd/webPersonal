@@ -1,0 +1,26 @@
+$cabecera_altura: 3rem;
+$fuente_mediana:500;
+$fuente_semi:600;
+$fuente_bold:700;
+$color_principal:#6275FF;
+$color_blanco:#FAFAFF;
+$color_oscuro:#2A3B47;
+$color_gris:#697477;
+$fuente:'Poppins', sans-serif;
+$fuente_tamanoGrande: 2.5rem;
+$fuente_tamanoh2: 1.25rem;
+$fuente_tamanoNormal: .938rem;
+$fuente_tamanoChico: .813rem;
+
+@media screen and (min-width: 768px){
+    $fuente_tamanoGrande: 6.5rem;
+    $fuente_tamanoh2: 2rem;
+    $fuente_tamanoNormal: 1rem;
+    $fuente_tamanoChico: .875rem;
+}
+
+$mb-1: .5rem;
+$mb-2: 1rem;
+$mb-3: 1.5rem;
+$mb-4: 2rem;
+$index: 3;

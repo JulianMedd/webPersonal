@@ -1,0 +1,28 @@
+.scrollTop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    background-color: $color_principal;
+    border-radius: .5rem;
+    z-index: $index;
+    transition: .4s;
+    visibility: hidden;
+
+    &:hover{
+        background-color: $color_oscuro;
+    }
+
+    .scrollTop__icono{
+        font-size: 1.5rem;
+        color: $color_blanco;
+    }
+}
+
+.show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
+}

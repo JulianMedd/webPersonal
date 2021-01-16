@@ -1,0 +1,36 @@
+*,::after,::before{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: $cabecera_altura 0 0 0;
+    font-family: $fuente;
+    font-size: $fuente_tamanoNormal;
+    font-weight: $fuente_mediana;
+    line-height: 1.6;
+}
+
+h1,h2,p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $color_blanco;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
