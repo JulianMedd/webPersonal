@@ -70,8 +70,8 @@ sr.reveal('.sobreMi__img',{delay: 500})
 sr.reveal('.seccion-titulo',{delay: 500})
 sr.reveal('.sobreMi__info', {delay: 400})
 
-sr.reveal('.skills__info', {origin:'left', delay: 500})
-sr.reveal('.skills__img', {origin:'right', delay: 500})
+sr.reveal('.skills__info', {delay: 500})
+sr.reveal('.skills__img', {delay: 500})
 
 sr.reveal('.proyectos__img',{origin:'bottom', delay: 400})
 
