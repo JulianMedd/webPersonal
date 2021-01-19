@@ -5,16 +5,15 @@
     .home__contenedor{
         position: relative;
         height: calc(100vh - 3rem);
-        grid-template-rows: repeat(2,max-content);
+        grid-template-rows: repeat(2, max-content);
         align-content: space-around;
-        row-gap: 2rem;
+        row-gap: 1rem;
 
         .home__info{
             border-left: 4px solid $color_blanco;
             color: $color_blanco;
             z-index: 1;
             padding-left: 1.5rem;
-            margin-top: .5rem;
 
             .home__nombre{
                 font-size: 2rem;
@@ -72,8 +71,44 @@
             bottom: 0;
 
             img{
-                width: 200px;
+                width: 270px;
+            }
+
+            @media screen and(min-width: 576px){
+                img{
+                    width: 400px;
+                }
             }
         }
+    }
+}
+
+@media screen and(min-width: 768px){
+    .home{
+        .home__contenedor{
+            //width: 90%;
+            height: 100vh;
+            grid-template-rows: max-content .5fr;
+            margin: auto;
+            padding: 0 1.5rem;
+
+            .home__info{
+                .home__saludo{
+                    font-size: 2rem;
+                }
+
+                .home__nombre{
+                    font-size: 4rem;
+                }
+            }
+
+            .home__img{
+                img{
+                    width: 600px;
+                }
+            }
+        }
+
+        
     }
 }

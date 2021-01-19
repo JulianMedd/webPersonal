@@ -31,6 +31,28 @@ function scrollTop(){
 
 window.addEventListener("scroll", scrollTop)
 
+/*SECCIONES LINK*/
+
+const sections = document.querySelectorAll('section[id]')
+
+window.addEventListener('scroll', scrollActive)
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
+        }
+    })
+}
+
 /*SCROLL REVEAL*/
 
 const sr = ScrollReveal({
@@ -46,6 +68,14 @@ sr.reveal('.home__img',{origin: 'right', delay: 400})
 
 sr.reveal('.sobreMi__img',{delay: 500})
 sr.reveal('.seccion-titulo',{delay: 500})
-sr.reveal('.sobreMi__subTitulo', {delay: 300})
-sr.reveal('.sobreMi__profesion', {delay: 400})
-sr.reveal('.sobreMi__texto', {delay: 500})
+sr.reveal('.sobreMi__info', {delay: 400})
+
+sr.reveal('.skills__info', {origin:'left', delay: 500})
+sr.reveal('.skills__img', {origin:'right', delay: 500})
+
+sr.reveal('.proyectos__img',{origin:'bottom', delay: 400})
+
+sr.reveal('.contacto__info', {})
+sr.reveal('.contacto__form', {})
+
+sr.reveal('.footer__info',{delay: 400})

@@ -1,0 +1,68 @@
+.contacto{
+
+    .contacto__contenedor{
+        margin: auto;
+        row-gap: 2rem;
+
+        .contacto__info{
+
+            .contacto__subtitulo{
+                font-size: $fuente_tamanoChico;
+                color: $color_principal;
+            }
+
+            .contacto__texto{
+                display: inline-block;
+                margin-bottom: $mb-2;
+                color: $color_gris;
+            }
+
+        }
+
+        .contacto__form{
+
+            .contacto__inputs{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 1rem;
+            }
+
+            .contacto__input{
+                width: 100%;
+                padding: .8rem;
+                outline: none;
+                border: 1.5px solid $color_oscuro;
+                font-size: $fuente_tamanoNormal;
+                margin-bottom: $mb-4;
+                border-radius: .5rem;
+            }
+
+            .contacto__button{
+                display: block;
+                background-color: $color_principal;
+                color: $color_blanco;
+                padding: .75rem 2.5rem;
+                margin-left: auto;
+                border-radius: .5rem;
+                border: none;
+                outline: none;
+                font-size: $fuente_tamanoNormal;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 768px){
+    .contacto{
+        margin: auto;
+        .contacto__contenedor{
+            grid-template-columns: repeat(2,1fr);
+            justify-items: center;
+
+            .contacto__form{
+                width: 380px;
+            }
+        }
+    }
+}

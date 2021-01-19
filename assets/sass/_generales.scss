@@ -5,10 +5,9 @@
 .seccion-titulo{
     position: relative;
     font-size: $fuente_tamanoh2;
-    color: $color_oscuro;
-    margin-top: $mb-4 0;
+    color: $color_principal;
+    margin-bottom: $mb-4;
     text-align: center;
-    border-bottom: 4px $color_principal solid;
 }
 
 .seccion::after{
@@ -27,6 +26,19 @@
     max-width: 1024px;
     display: grid;
     grid-template-columns: 100%;
+    width: calc(100% - 2rem);
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+}
+
+@media screen and(min-width: 768px){
+    .seccion{
+        padding-top: 4rem;
+    }
+
+    .seccion-titulo{
+        margin-bottom: 4rem;
+        font-size: 2rem;
+    }
+
 }

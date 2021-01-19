@@ -1,0 +1,50 @@
+.proyectos{
+
+    .proyectos__contenedor{
+        justify-items: center;
+        row-gap: 2rem;
+        margin: auto;
+
+        .proyectos__img{
+            position: relative;
+            overflow: hidden;
+            &:hover .proyectos__link{
+                bottom: 0;
+            }
+
+            img{
+                border-radius: .5rem;
+            
+            }
+
+            .proyectos__link{
+                position: absolute;
+                bottom: -100%;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(255,255,255,.3);
+                border-radius: .5rem;
+                cursor: pointer;
+                backdrop-filter: blur(10px);
+                transition: .6s;
+
+                .proyectos__link-nombre{
+                    color: $color_oscuro;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 768px){
+    .proyectos{
+
+        .proyectos__contenedor{
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 2rem;
+        }
+    }
+}

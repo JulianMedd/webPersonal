@@ -80,30 +80,30 @@
                     }
                 }
             }
-        }
 
-        .nav__perfil{
-            .nav__name{
-                display: block;
-                color: $color_blanco;
-            }
-
-            .nav_profesion{
-                font-size: $fuente_tamanoChico;
-            }
-            .nav__img{
-                display: flex;
-                justify-content: center;
-                padding-top: .25rem;
-                margin-bottom: .8rem;
-                width: 56px;
-                height: 56px;
-                background-color: $color_oscuro;
-                border-radius: 59%;
-                overflow: hidden;
-
-                img{
-                    width: 46px;
+            .nav__perfil{
+                .nav__name{
+                    display: block;
+                    color: $color_blanco;
+                }
+    
+                .nav_profesion{
+                    font-size: $fuente_tamanoChico;
+                }
+                .nav__img{
+                    display: flex;
+                    justify-content: center;
+                    padding-top: .25rem;
+                    margin-bottom: .8rem;
+                    width: 56px;
+                    height: 56px;
+                    background-color: $color_oscuro;
+                    border-radius: 59%;
+                    overflow: hidden;
+    
+                    img{
+                        width: 46px;
+                    }
                 }
             }
         }
@@ -115,12 +115,9 @@
 }
 
 @media screen and(min-width: 768px){
-    body{
-        margin: 0;
-    }
-
     .cabecera{
-        height: calc($cabecera_altura + 1rem);
+        padding: 0 3rem;
+        height: ($cabecera_altura + 1rem);
 
         .cabecera__logo{
             display: none;
@@ -149,7 +146,7 @@
                     display: flex;
                     align-items: center;
 
-                    .nav_profesion{
+                    .nav__profesion{
                         display: none;
                         color: $color_oscuro;
                     }

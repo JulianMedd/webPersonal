@@ -11,6 +11,11 @@
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>ISRAEL MEDINA</title>
+
+    <!-- iconos -->
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+
 </head>
 <body>
     <a href="#" class="scrollTop" id="scroll-top">
@@ -18,7 +23,7 @@
     </a>
     <!--CABECERA-->
     <header class="cabecera">
-        <a href="#" class="cabecera__logo">Israel Medina</a>
+        <a href="https://github.com/JulianMedd" class="cabecera__logo" target="_blank">Israel Medina</a>
 
         <ion-icon name="menu-outline" class="cabecera__toggle" id="nav-toggle"></ion-icon>
 
@@ -42,14 +47,14 @@
                         <li class="nav__item"><a href="#sobreMi" class="nav__link">SOBRE MI</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">SKILLS</a></li>
                         <li class="nav__item"><a href="#proyectos" class="nav__link">PROYECTOS</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">CONTACTO</a></li>
+                        <li class="nav__item"><a href="#contacto" class="nav__link">CONTACTO</a></li>
                     </ul>
                 </div>
 
                 <div class="nav__redes">
-                    <a href="" class="nav__redes--icono"><ion-icon name="logo-github"></ion-icon></a>
-                    <a href="" class="nav__redes--icono"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="" class="nav__redes--icono"><ion-icon name="logo-behance"></ion-icon></a>
+                    <a href="https://github.com/JulianMedd" class="nav__redes--icono" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="" class="nav__redes--icono" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="" class="nav__redes--icono" target="_blank"><ion-icon name="logo-behance"></ion-icon></a>
                 </div>
             </div>
         </nav>
@@ -67,9 +72,9 @@
                 </article>
 
                 <article class="home__redes">
-                    <a href="" class="home__redes--icono"><ion-icon name="logo-github"></ion-icon></a>
-                    <a href="" class="home__redes--icono"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="" class="home__redes--icono"><ion-icon name="logo-behance"></ion-icon></a>
+                    <a href="https://github.com/JulianMedd" class="home__redes--icono" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="" class="home__redes--icono" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="" class="home__redes--icono" target="_blank"><ion-icon name="logo-behance"></ion-icon></a>
                 </article>
     
                 <article class="home__img">
@@ -80,12 +85,11 @@
 
         <!--SOBRE MI-->
         <section class="sobreMi seccion" id="sobreMi">
+            <h2 class="seccion-titulo">SOBRE MI</h2>
             <div class="sobreMi__contenedor bd-grid">
-                <h2 class="seccion-titulo">SOBRE MI</h2>
                 <article class="sobreMi__img">
                     <img src="assets/img/foto_perfil.png" alt="foto personal">
                 </article>
-
                 <article class="sobreMi__info">
                     <h2 class="sobreMi__subTitulo">Soy Israel Julian Medina</h2>
                     <span class="sobreMi__profesion">Web developer jr</span>
@@ -96,14 +100,111 @@
                 </article>
             </div>
         </section>
+
+        <!-- SKILLS -->
+        <section class="skills seccion" id="skills">
+            <h2 class="seccion-titulo">SKILLS</h2>
+            <div class="skills__contenedor bd-grid">
+                <article class="skills__info">
+                    <h3 class="skills__subtitulo">Programación</h3>
+                        <span class="skills__nombre">Html</span>
+                        <span class="skills__nombre">Css</span>
+                        <span class="skills__nombre">Javascript</span>
+                        <span class="skills__nombre">Scss</span>
+                        <span class="skills__nombre">Git</span>
+                        <span class="skills__nombre">C</span>
+                        <span class="skills__nombre">Java</span>
+                        
+                        <h3 class="skills__subtitulo">Diseño</h3>
+                        <span class="skills__nombre">Illustrator</span>
+                        <span class="skills__nombre">Photoshop</span>
+                </article>
+                <article class="skills__img">
+                    <img src="assets/img/1366_2000.jpg" alt="">
+                </article>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section class="proyectos seccion" id="proyectos">
+            <h2 class="seccion-titulo">PROYECTOS</h2>
+            <div class="proyectos__contenedor bd-grid">
+                <div class="proyectos__img">
+                    <img src="assets/img/proyectoIsurus.jpg" alt="proyecto diseño web">
+
+                    <div class="proyectos__link">
+                        <a href="http://proyecto-final-isurus-git-main.julianmedd.vercel.app/" class="proyectos__link-name" target="_blank">Mirar proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contacto seccion" id="contacto">
+            <h2 class="seccion-titulo">CONTACTO</h2>
+
+            <div class="contacto__contenedor bd-grid">
+                <article class="contacto__info">
+                    <h3 class="contacto__subtitulo">EMAIL</h3>
+                    <span class="contacto__texto">julian.medina7@hotmail.com.ar</span>
+
+                    <h3 class="contacto__subtitulo">TELEFONO</h3>
+                    <span class="contacto__texto">+20 999-999</span>
+
+                    <h3 class="contacto__subtitulo">DIRECCION</h3>
+                    <span class="contacto__texto">Merlo, Buenos Aires - ARGENTINA</span>
+                </article>
+
+                <form action="" class="contacto__form">
+                    <div class="contacto__inputs">
+                        <input type="text" placeholder="Nombre" class="contacto__input">
+                        <input type="mail" placeholder="Email" class="contacto__input">
+                    </div>
+
+                    <textarea name="" id="" cols="0" rows="10" class="contacto__input"></textarea>
+
+                    <input type="submit" value="Enviar" class="contacto__button">
+                </form>
+            </div>
+        </section>
     </main>
+
+    <!-- footer -->
+    <footer class="footer seccion">
+        <div class="footer__contenedor bd-grid">
+            <div class="footer__info">
+                <h2 class="footer__titulo">Israel Julian Medina</h2>
+                <p class="footer__texto">Soy Israel y esta es mi web/portfolio personal.</p>
+            </div>
+
+            <div class="footer__info">
+                <h2 class="footer__titulo">NAVEGAR</h2>
+                <ul>
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#sobremi" class="footer__link">Sobre mi</a></li>
+                    <li><a href="#skills" class="footer__link">Skills</a></li>
+                    <li><a href="#proyectos" class="footer__link">Proytectos</a></li>
+                    <li><a href="#Contacto" class="footer__link">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__info">
+                <h2 class="footer__titulo">SEGUIME</h2>
+                <a href="https://github.com/JulianMedd" class="footer__redes" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="" class="footer__redes" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="" class="footer__redes" target="_blank"><ion-icon name="logo-behance"></ion-icon></a>
+            </div>
+
+
+        </div>
+    </footer>
 
 
 
 
 
     <!-- iconos -->
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <!--<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> -->
     <!-- scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- main js -->

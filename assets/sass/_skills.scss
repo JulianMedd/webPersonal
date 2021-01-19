@@ -1,0 +1,43 @@
+.skills{
+    row-gap: 2rem;
+    .skills__contenedor{
+        margin: auto;
+
+        .skills__info{
+            margin: auto;
+            .skills__subtitulo{
+                color: $color_principal;
+                margin-bottom: $mb-3;
+            }
+
+            .skills__nombre{
+                display: inline-flex;
+                font-size: $fuente_tamanoChico;
+                margin-right: $mb-2;
+                margin-bottom: $mb-3;
+                padding: .25rem .5rem;
+                border-radius: .25rem;
+                &:hover{
+                    background-color: $color_principal;
+                    color: $color_blanco;
+                }
+            }
+        }
+
+        .skills__img{
+
+            img{
+                border-radius: .5rem;
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 768px){
+    .skills{
+        .skills__contenedor{
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+        }
+    }
+}
