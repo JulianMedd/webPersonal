@@ -341,11 +341,11 @@ img {
   bottom: 0;
 }
 .home .home__contenedor .home__img img {
-  width: 270px;
+  width: 300px;
 }
 @media screen and (min-width: 576px) {
   .home .home__contenedor .home__img img {
-    width: 400px;
+    width: 300px;
   }
 }
 
