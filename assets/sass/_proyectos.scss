@@ -3,12 +3,13 @@
     .proyectos__contenedor{
         justify-items: center;
         row-gap: 2rem;
-        margin: auto;
-        
+        margin: auto;        
 
         .proyectos__img{
             position: relative;
             overflow: hidden;
+            height: 200px;
+            
 
             &:hover .proyectos__link{
                 bottom: 0;
@@ -16,7 +17,8 @@
 
             img{
                 border-radius: .5rem;
-            
+                height: 200px;
+                width: auto;
             }
 
             .proyectos__link{

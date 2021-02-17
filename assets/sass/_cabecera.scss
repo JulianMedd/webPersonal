@@ -97,12 +97,13 @@
                     margin-bottom: .8rem;
                     width: 56px;
                     height: 56px;
-                    background-color: $color_oscuro;
+                    background-color: $color_blanco;
                     border-radius: 59%;
                     overflow: hidden;
     
                     img{
-                        width: 46px;
+                        width: auto;
+                        height: 60px;
                     }
                 }
             }

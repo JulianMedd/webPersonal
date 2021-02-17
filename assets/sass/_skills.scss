@@ -17,14 +17,21 @@
                 margin-bottom: $mb-3;
                 padding: .25rem .5rem;
                 border-radius: .25rem;
+                cursor: pointer;
+                @include shadow;
+
                 &:hover{
-                    background-color: $color_principal;
-                    color: $color_blanco;
+                    //background-color: $color_principal;
+                    color: $color_principal;
+                    @include shadow-inset;
                 }
             }
         }
 
         .skills__img{
+            padding: 3rem;
+            border-radius: 50%;
+            @include shadow;
 
             img{
                 border-radius: .5rem;

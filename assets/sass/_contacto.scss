@@ -15,6 +15,11 @@
                 display: inline-block;
                 margin-bottom: $mb-2;
                 color: $color_gris;
+
+                a{
+                    color: $color_gris;
+                }
+                
             }
 
         }
@@ -31,10 +36,12 @@
                 width: 100%;
                 padding: .8rem;
                 outline: none;
-                border: 1.5px solid $color_oscuro;
+                border:none; // 1.5px solid $color_oscuro;
                 font-size: $fuente_tamanoNormal;
                 margin-bottom: $mb-4;
                 border-radius: .5rem;
+                background-color: #e9e9e9;
+                @include shadow-inset;
             }
 
             .contacto__button{
@@ -48,6 +55,16 @@
                 outline: none;
                 font-size: $fuente_tamanoNormal;
                 cursor: pointer;
+                @include shadow;
+
+                &:active{
+                    background: #ccc;
+                    color: $color_principal;
+                }
+    
+                &:active{
+                    @include shadow-inset;
+                }
             }
         }
     }

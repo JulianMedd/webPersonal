@@ -3,7 +3,7 @@ $fuente_mediana:500;
 $fuente_semi:600;
 $fuente_bold:700;
 $color_principal:#6275FF;
-$color_blanco:#FAFAFF;
+$color_blanco:#fff;
 $color_oscuro:#2A3B47;
 $color_gris:#697477;
 $fuente:'Poppins', sans-serif;
@@ -24,3 +24,13 @@ $mb-2: 1rem;
 $mb-3: 1.5rem;
 $mb-4: 2rem;
 $index: 3;
+
+@mixin shadow {
+    box-shadow: -4px -4px 7px #fff,
+                4px 4px 7px rgba(#000, 0.4);
+}
+
+@mixin shadow-inset {
+    box-shadow: inset -6px -6px 9px #fff,
+                inset 6px 6px 9px rgba(#000, 0.4);
+}

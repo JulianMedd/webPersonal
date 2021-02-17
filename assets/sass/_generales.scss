@@ -1,5 +1,5 @@
 .seccion{
-    padding: 3rem 0;
+    padding: 5rem 0;
 }
 
 .seccion-titulo{
@@ -8,6 +8,7 @@
     color: $color_principal;
     margin-bottom: $mb-4;
     text-align: center;
+    
 }
 
 .seccion::after{
@@ -33,7 +34,7 @@
 
 @media screen and(min-width: 768px){
     .seccion{
-        padding-top: 4rem;
+        padding-top: 6rem;
     }
 
     .seccion-titulo{
